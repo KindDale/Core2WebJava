@@ -1,31 +1,22 @@
+
 import java.util.*;
-class myclass {
+class ok {
 	public static void main (String args[]){
 		Scanner sc = new Scanner (System.in);
-		
-		/*System.out.println("Enter the number of Students")
-		int stud = sc.nextInt();
-		
-		while (stud <= 0){
-			System.out.print("Invalid Value. Re-Enter the number of students = ");
-			stud = sc.nextInt();
-		}*/		
-		
-		String name; int roll; float marks;
-		//for (int i = 1; i <= stud; i++)
-			
-			System.out.print("Enter the name of the 1st student = ");
-			name = sc.next();
-			System.out.print("Enter Roll number = ");
-			roll = sc.nextInt();
-			System.out.print("Enter marks = ");
-			marks = sc.nextFloat();
+		System.out.println("Enter Grade among O, A, B,C and F");
+		char ch = sc.next().charAt(0);
+		System.out.println(ch);
 
-		System.out.println("\nStudent data is as follows\n");
+		if (ch == 'O' || ch == 'o')
+			System.out.println("Outstanding");
+		else if (ch == 'A' || ch == 'a')
+			System.out.println("Excellent");
+		else if (ch == 'B' || ch == 'b')
+			System.out.println("Good");
+		else if (ch == 'C' || ch == 'c')
+			System.out.println("Alright");
+		else if (ch == 'f' || ch == 'F')
+			System.out.println("Fail");
 
-		//for (int i = 1; i <= stud ; i++)
-			System.out.println("Name - "+name);
-			System.out.println("Roll no. - "+roll);
-			System.out.println("Marks - "+marks);
 	}
 }
