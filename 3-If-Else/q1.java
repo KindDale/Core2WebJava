@@ -4,6 +4,6 @@ class positive {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a number = ");
 		int x = sc.nextInt();
-		System.out.println((x > 0) ? (x + " is even number") : (x + " is odd number")); 
+		System.out.println((x > 0) ? (x + " is Positive number") : (x + " is Negative number")); 
 	}
 }
